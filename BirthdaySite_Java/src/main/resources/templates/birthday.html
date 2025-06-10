@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ffd6e0, #ffb6c1, #fff);
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding-top: 80px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            color: #ff4d6d;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #ff6b81;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy Birthday <span th:text="${name}">Friend</span>! 🎂</h1>
+    <p th:text="${message}">Hope you have the best day ever!</p>
+</body>
+</html>
